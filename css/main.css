@@ -203,6 +203,23 @@
 	float: left;
 	padding-right:10px;
 }
+.banner .tab-body{
+	background: url(../images/fe.png);
+	height: 460px;
+	width: 732px;
+	z-index: 3;
+	position: absolute;
+	left: 250px;
+}
+.banner .tab-body h3{
+	padding: 50px;
+	color: #f01400;
+}
+.banner .tab-body p{
+	padding:0 50px;
+	color: #14191e;
+	line-height:30px;
+}
 .banner #list{
 	width: 10000px;
 	height: 460px;
