@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+/*nav*/
+.nav{
+	background: url(../images/nav-banner.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 490px;
+	background-color: #FDFDFD;
+}
+.nav-pos{
+	padding-top: 10px;
+}
+.nav-ul{
+	width: 70%;
+}
+.nav-pos div
+{
+	display: inline-block;
+}
+.nav .pos{
+	width: 100%;
+}
+.nav .logo
+{
+	background: url(../images/logo.png) no-repeat center center;
+	background-size: 100%;
+	width: 140px;
+	height: 60px;
+	margin-left: 20px;
+	float: left;
+}
+.nav ul li{
+	display:inline-block;
+}
+.nav .left{
+	float: left;
+	margin-left: 20px;
+	width: 400px;
+}
+.nav .left a{
+	height: 60px;
+	padding:0 20px;
+	line-height: 60px;
+}
+.nav .right{
+	float: right;
+	margin-right: 20px;
+	width: 600px;
+	text-align: right;
+}
+.nav .right li .search{
+    border: 0;
+    outline:medium;
+}
+.search-active{
+	border: 0;
+	outline:medium;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d9dde1;
+}
+.display{
+	display: none;
+}
+.nav .right a{
+	height: 60px;
+	padding:0 20px;
+	line-height: 60px;
+}
+.nav .right i{
+	width: 32px;
+	height: 32px;
+}
+.nav .right .user-img{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	position: absolute;
+	top: 22px;
+	right:20px; 
+}
+.user-information{
+	position: absolute;
+	top:70px;
+	right:10px;
+	height:200px;
+	width:300px;
+	background: url(../images/user_card_top.png) no-repeat;
+	background-color: #fff;
+	text-align: left;
+}
+.user-card-top{
+	color: #fff;
+	font-size: 14px;
+}
+.user-card-top img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.user-card-top .img{
+	position: absolute;
+	top: 20px;
+	left:20px; 
+}
+.user-card-top .card{
+	position: absolute;
+	top:25px;
+	left:90px; 
+}
+.user-card-top .card1{
+	position: absolute;
+	top:32px;
+	left:230px; 
+}
+.user-card-top div{
+	display: inline-block;
+}
+.user-card-middle{
+	width:300px;
+	font-size: 14px;
+	position: absolute;
+	top:110px;
+	border-bottom:1px solid #d9dde1;
+	height:60px;
+	color: #787d82;
+}
+.user-card-middle div{
+	display: inline-block;
+}
+.user-card-middle .left{
+	width: 200px;
+	position: absolute;
+	left:20px;
+	top:5px;
+}
+.user-card-middle .right{
+	width:40px;
+	position: absolute;
+	top:10px;
+	left:230px;
+}
+.user-card-bottom{
+	position: absolute;
+	top:175px;
+	font-size: 14px;
+	color: #787d82;
+}
+.user-card-bottom .left{
+	top: -20px;
+	position: absolute;
+	width: 150px;
+}
+.user-card-bottom .right{
+	top: -20px;
+	position: absolute;
+	left: 200px;
+	width: 50px;
+}
+/*banner*/
+.banner{
+	width: 1200px;
+	height: 460px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+/*tab*/
+.banner .tab{
+	width: 250px;
+	height: 460px;
+	position: absolute;
+	background-color: RGBA(0,0,0,.4);
+	z-index: 2;
+}
+.banner .tab-div{
+	margin: 10px 10px;
+	height: 80px;
+	width: 230px;
+	border-bottom: 1px solid #FDFDFD;
+	color: #fff;
+}
+.banner .tab-div-bottom{
+	margin: 10px 10px;
+	height: 80px;
+	width: 230px;
+	color: #fff;
+}
+.banner .tab-text{
+	padding:10px 10px;
+}
+.banner .tab-div .p{
+	line-height:16px;
+    font-size: 16px;
+}
+.banner .tab-text-p p{
+	font-size: 14px;
+	line-height:12px;
+	float: left;
+	padding-right:10px;
+}
+.banner #list{
+	width: 10000px;
+	height: 460px;
+	position: absolute;
+	z-index: 1;
+	transition:left 1s;
+	-moz-transition:left 1s; /* Firefox 4 */
+	-webkit-transition:left 1s; /* Safari and Chrome */
+	-o-transition:left 1s; /* Opera */
+}
+.banner #list{
+	float: left;
+}
+.banner #button{
+	z-index: 2;
+	height: 10px;
+	position: absolute;
+	bottom:30px; 
+	right: 100px;
+}
+.banner #button .on{
+	 background: #f01400;
+}
+.banner #button span{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #fff;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.banner .arrow{
+	width: 40px;
+	height: 80px;
+	font-size:55px;
+	z-index: 2;
+	position: absolute;
+	top:180px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #fff;
+}
+.banner .arrow:hover{
+	background-color: RGBA(0,0,0,.4);
+}
+.banner #prve{
+	left: 270px;
+}
+.banner #next{
+	right: 20px;
+}
