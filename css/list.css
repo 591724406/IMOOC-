@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+.hidden{
+	display: none;
+}
+.title-left{
+	float: left;
+	margin: 20px;
+	line-height: 16px;
+    color: #07111b;
+}
+.title-right{
+	float: right;
+	margin: 20px;
+	line-height: 14px;
+    font-size: 14px;
+    color: #07111b;
+}
+/*nav*/
+.nav{
+	background-size: cover;
+	width: 100%;
+	height:70px;
+	background: #000000;
+	color: #ffffff
+}
+.nav-pos{
+	padding-top: 10px;
+}
+.nav-ul{
+	width: 70%;
+}
+.nav-pos div
+{
+	display: inline-block;
+}
+.nav .pos{
+	width: 100%;
+}
+.nav .logo
+{
+	background: url(../images/logo1.png) no-repeat center center;
+	background-size: 100%;
+	width: 140px;
+	height: 60px;
+	margin-left: 20px;
+	float: left;
+}
+.nav ul li{
+	display:inline-block;
+}
+.nav .left{
+	float: left;
+	margin-left: 20px;
+	width: 400px;
+}
+.nav .left a{
+	height: 60px;
+	padding:0 20px;
+	line-height: 60px;
+}
+.nav .right{
+	float: right;
+	margin-right: 20px;
+	width: 600px;
+	text-align: right;
+
+}
+.nav .right li a{
+	color: #757a7e;
+}
+.nav .right li .search{
+    border: 0;
+    outline:medium;
+    background: #000000;
+    border-bottom: 1px solid #d9dde1;
+    color: #fff;
+}
+.search-active{
+	border: 0;
+	outline:medium;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d9dde1;
+	background: #000000;
+	color: #fff;
+}
+.display{
+	display: none;
+}
+.nav .right a{
+	height: 60px;
+	padding:0 20px;
+	line-height: 60px;
+}
+.nav .right i{
+	width: 32px;
+	height: 32px;
+}
+.nav .right .user-img{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	position: absolute;
+	top: 22px;
+	right:20px; 
+}
+.user-information{
+	position: absolute;
+	top:70px;
+	right:10px;
+	height:200px;
+	width:300px;
+	background: url(../images/user_card_top.png) no-repeat;
+	background-color: #fff;
+	text-align: left;
+}
+.user-card-top{
+	color: #fff;
+	font-size: 14px;
+}
+.user-card-top img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.user-card-top .img{
+	position: absolute;
+	top: 20px;
+	left:20px; 
+}
+.user-card-top .card{
+	position: absolute;
+	top:25px;
+	left:90px; 
+}
+.user-card-top .card1{
+	position: absolute;
+	top:32px;
+	left:230px; 
+}
+.user-card-top div{
+	display: inline-block;
+}
+.user-card-middle{
+	width:300px;
+	font-size: 14px;
+	position: absolute;
+	top:110px;
+	border-bottom:1px solid #d9dde1;
+	height:60px;
+	color: #787d82;
+}
+.user-card-middle div{
+	display: inline-block;
+}
+.user-card-middle .left{
+	width: 200px;
+	position: absolute;
+	left:20px;
+	top:5px;
+}
+.user-card-middle .right{
+	width:40px;
+	position: absolute;
+	top:10px;
+	left:230px;
+}
+.user-card-bottom{
+	position: absolute;
+	top:175px;
+	font-size: 14px;
+	color: #787d82;
+}
+.user-card-bottom .left{
+	top: -20px;
+	position: absolute;
+	width: 150px;
+}
+.user-card-bottom .right{
+	top: -20px;
+	position: absolute;
+	left: 200px;
+	width: 50px;
+}
+/*list-type*/
+.list-type{
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+	font-size: 14px;
+}
+.list-type .active{
+	background-color: #f01400;
+	color: #fff;
+}
+.listen-text{
+	margin-top:10px;
+	margin-left:100px;
+}
+.list-type p{
+    margin:10px;
+    color: #787d82;
+}
+.list-type a{
+	display:block;
+	height:20px;
+	padding: 2px;
+    margin:8px;
+    float: left;
+}
+.list-top{
+	height: 60px;
+	border-bottom: 1px solid #d0d6d9;
+}
+.list-middle{
+	height:240px;
+}
+.listen-top{
+	height:40px;
+	border-bottom: 1px solid #edf1f2;
+}
+.listen-middle{
+	height:120px;
+	border-bottom: 1px solid #edf1f2;
+}
+.listen-middle .listen-text{
+}
+.listen-bottom{
+	border-bottom: 1px solid #d0d6d9;
+	height:56px;
+}
+.listen-left{
+	margin-left: 20px;
+	width: 200px;
+}
+.list-bottom{
+	margin-top: 0;
+	height:40px;
+	background-color: #f9f9f9;
+	position: relative;
+}
+.list-bottom .left{
+	position: absolute;
+	left: 20px;
+}
+.list-bottom .left p{
+	display: inline-block;
+}
+.list-bottom .right{
+	position: absolute;
+	right: 20px;
+}
+.list-bottom .right p{
+	display: inline-block;
+}
+.list-bottom .active1{
+	 color: #787d82;
+}
+.list-bottom  input{
+	width: 18px;
+	height: 18px;
+	background-color: #c8cdd2;
+    opacity: .6;
+    cursor: default;
+    vertical-align: middle;
+    border: 1px solid #c8cdd2;
+}
