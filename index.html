@@ -7,127 +7,641 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
-	<div class="nav">
-		<div class="nav-pos">
-			<div class="logo"></div>
-			<ul class="left">
-				<li><a>实战</a></li>
-				<li><a>路径</a></li>
-				<li><a>袁问</a></li>
-				<li><a>手记</a></li>
-			</ul>
-			<ul class="right">
-				<li><input type="search" class="search display" placeholder="请输入要查找的内容" id="search"/></li>
-				<li><a id="search-hidden"><i class="icon-search icon-large"></i></a></li>
-				<li><a><i class="icon-heart-empty icon-large"></i></a></li>
-				<li><a><i class="icon-bell icon-large"></i></a></li>
-				<li><a><i class="icon-envelope-alt icon-large"></i></a></li>
-				<li class="userMo">
-					<a><img src="images/user.jpg" class="user-img"></a>
-					<div class="user-information" style="display: none;">
-						<div class="user-card-top">
-							<div class="img">
-								<img src="images/user100.jpg">
+	<div class="header">
+		<div class="nav">
+			<div class="nav-pos">
+				<div class="logo"></div>
+				<ul class="left">
+					<li><a>实战</a></li>
+					<li><a>路径</a></li>
+					<li><a>袁问</a></li>
+					<li><a>手记</a></li>
+				</ul>
+				<ul class="right">
+					<li><input type="search" class="search display" placeholder="请输入要查找的内容" id="search"/></li>
+					<li><a id="search-hidden"><i class="icon-search icon-large"></i></a></li>
+					<li><a><i class="icon-heart-empty icon-large"></i></a></li>
+					<li><a><i class="icon-bell icon-large"></i></a></li>
+					<li><a><i class="icon-envelope-alt icon-large"></i></a></li>
+					<li class="userMo">
+						<a><img src="images/user.jpg" class="user-img"></a>
+						<div class="user-information" style="display: none;">
+							<div class="user-card-top">
+								<div class="img">
+									<img src="images/user100.jpg">
+								</div>
+								<div class="card">
+									<h3>用户1</h3>
+									<p>经验5000 积分500</p>
+								</div>
+								<div class="card1">
+									<p>积分商城</p>
+								</div>
 							</div>
-							<div class="card">
-								<h3>用户1</h3>
-								<p>经验5000 积分500</p>
+							<div class="user-card-middle">
+								<div class="left">
+									<h4>全屏切换效果</h4>
+									<p>2-4 实现滑动效果</p>
+								</div>
+								<div class="right">
+									<p>继续</p>
+								</div>
 							</div>
-							<div class="card1">
-								<p>积分商城</p>
+							<div class="user-card-bottom">
+								<a class="left">个人设置</a>
+								<a class="right">退出</a>
 							</div>
 						</div>
-						<div class="user-card-middle">
-							<div class="left">
-								<h4>全屏切换效果</h4>
-								<p>2-4 实现滑动效果</p>
-							</div>
-							<div class="right">
-								<p>继续</p>
+					</li>
+				</ul>
+			</div>
+			<div class="banner" id="banner">
+				<div  id="list" style="left: -1205px">
+					<img src="images/bg5.jpg">
+					<img src="images/bg1.jpg">
+					<img src="images/bg2.jpg">
+					<img src="images/bg3.jpg">
+					<img src="images/bg4.jpg">
+					<img src="images/bg5.jpg">
+					<img src="images/bg1.jpg">
+				</div>
+				
+				<div class="tab" id="tab">
+					<section>
+						<div class="tab-div">
+							<div class="tab-text">
+								<p class="p">前端学习</p><br/>
+								<div class="tab-text-p">
+									<p>html5</p> <p>javascript</p> <p>css3</p>
+								</div>
 							</div>
 						</div>
-						<div class="user-card-bottom">
-							<a class="left">个人设置</a>
-							<a class="right">退出</a>
+						<span class="tab-body1 tab-body hidden" name="tab-body">
+							<h3>分类目录</h3>
+							<p>HTML/CSS / JavaScript / Html5/CSS3 / jQuery / WebApp / Node.js / AngularJS / Bootstrap / 前端工具 /</p>
+							<h3>推荐</h3>
+							<p>课程 | JavaScript深入浅出 <br>
+							课程 | 玩转Bootstrap（JS插件篇）<br>
+							课程 | HTML5音乐可视化</p>
+						</span>
+					</section>
+					<section>
+						<div class="tab-div">
+							<div class="tab-text">
+								<p class="p">后端开发</p><br/>
+								<div class="tab-text-p">
+									<p>php</p> <p>java</p> <p>Linux</p> <p>c</p>
+								</div>
+							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
+						<span class="tab-body2 hidden tab-body">
+							<h3>分类目录</h3>
+							<p>PHP / Java / Linux / Python / C / C++ / Go / C# / 数据结构 /</p>
+							<h3>推荐</h3>
+							<p>课程 | 全面解析Java注解<br>
+							课程 | Linux软件安装管理<br>
+							课程 | 那些年你遇到的PHP错误与异常</p>
+						</span>
+					</section>
+					<section>
+						<div class="tab-div">
+							<div class="tab-text">
+								<p class="p">移动开发</p><br/>
+								<div class="tab-text-p">
+									<p>Android</p> <p>iOS</p> <p>Cocos2d-x</p>
+								</div>
+							</div>
+						</div>
+						<span class="tab-body3 hidden tab-body">
+							<h3>分类目录</h3>
+							<p>Android / iOS / Unity 3D / Cocos2d-x /</p>
+							<h3>推荐</h3>
+							<p>课程 | 玩儿转Swift 2.0（第四季）<br>
+							课程 | iOS-健康App系列之迈出你的第一步<br>
+							课程 | Android面试解密-Layout_weight</p>
+						</span>
+					</section>
+					<section>
+						<div class="tab-div">
+							<div class="tab-text">
+								<p class="p">数据处理</p><br/>
+								<div class="tab-text-p">
+									<p>MySQL</p> <p>MongoDB</p> <p>云计算</p>
+								</div>
+							</div>
+						</div>
+						<span class="tab-body4 hidden tab-body">
+							<h3>分类目录</h3>
+							<p>MySQL / MongoDB / 云计算 / Oracle / 大数据 / SQL Server /</p>
+							<h3>推荐</h3>
+							<p>课程 | R语言基础<br>
+							课程 | OpenStack基础<br>
+							课程 | MySQL开发技巧（二）</p>
+						</span>
+					</section>
+					<section>
+						<div class="tab-div-bottom">
+							<div class="tab-text">
+								<p class="p">图像处理</p><br/>
+								<div class="tab-text-p">
+									<p>Photoshop</p> <p>Maya</p> <p>Premiere</p>
+								</div>
+							</div>
+						</div>
+						<span class="tab-body5 hidden tab-body">
+							<h3>分类目录</h3>
+							<p>Photoshop / Maya / Premiere / ZBrush /</p>
+							<h3>推荐</h3>
+							<p>课程 | Doge变化术<br>
+							课程 | PS入门基础-魔幻调色<br>
+							课程 | Premiere魔术——图片变电影</p>
+						</span>
+					</section>
+				</div>
+				<div id="button">
+					<span class="on" index="1"></span>
+					<span index="2"></span>
+					<span index="3"></span>
+					<span index="4"></span>
+					<span index="5"></span>
+				</div>
+				<a id="prve" class="arrow">&lt;</a>
+				<a id="next" class="arrow">&gt;</a>
+			</div>
 		</div>
-		<div class="banner" id="banner">
-			<div  id="list" style="left: -1205px">
-				<img src="images/bg5.jpg">
-				<img src="images/bg1.jpg">
-				<img src="images/bg2.jpg">
-				<img src="images/bg3.jpg">
-				<img src="images/bg4.jpg">
-				<img src="images/bg5.jpg">
-				<img src="images/bg1.jpg">
-			</div>
-			
-			<div class="tab">
-				<div class="tab-div">
-					<div class="tab-text">
-						<p class="p">前端学习</p><br/>
-						<div class="tab-text-p">
-							<p>html5</p> <p>javascript</p> <p>css3</p>
-						</div>
-					</div>
+	</div>
+	
+	<div class="recommend">
+		<div>
+			<h3 class="title-left">实战推荐</h3>
+			<p class="title-right">更多 ></p>
+		</div>
+		<div class="detailPo">
+			<div class="detail">
+				<img src="images/recommend1.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
 				</div>
-				<div class="tab-div">
-					<div class="tab-text">
-						<p class="p">后端开发</p><br/>
-						<div class="tab-text-p">
-							<p>php</p> <p>java</p> <p>Linux</p> <p>c</p>
-						</div>
-					</div>
-				</div>
-				<div class="tab-div">
-					<div class="tab-text">
-						<p class="p">移动开发</p><br/>
-						<div class="tab-text-p">
-							<p>Android</p> <p>iOS</p> <p>Cocos2d-x</p>
-						</div>
-					</div>
-				</div>
-				<div class="tab-div">
-					<div class="tab-text">
-						<p class="p">数据处理</p><br/>
-						<div class="tab-text-p">
-							<p>MySQL</p> <p>MongoDB</p> <p>云计算</p>
-						</div>
-					</div>
-				</div>
-				<div class="tab-div-bottom">
-					<div class="tab-text">
-						<p class="p">图像处理</p><br/>
-						<div class="tab-text-p">
-							<p>Photoshop</p> <p>Maya</p> <p>Premiere</p>
-						</div>
-					</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
 				</div>
 			</div>
-			<div class="tab-body">
-				<h3>分类目录</h3>
-				<p>HTML/CSS / JavaScript / Html5/CSS3 / jQuery / WebApp / Node.js / AngularJS / Bootstrap / 前端工具 /</p>
-				<h3>推荐</h3>
-				<p>课程 | JavaScript深入浅出 <br>
-				课程 | 玩转Bootstrap（JS插件篇）<br>
-				课程 | HTML5音乐可视化</p>
+			<div class="detail">
+				<img src="images/recommend2.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
 			</div>
-			<div id="button">
-				<span class="on" index="1"></span>
-				<span index="2"></span>
-				<span index="3"></span>
-				<span index="4"></span>
-				<span index="5"></span>
+			<div class="detail">
+				<img src="images/recommend3.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
 			</div>
-			<a id="prve" class="arrow">&lt;</a>
-			<a id="next" class="arrow">&gt;</a>
+			<div class="detail">
+				<img src="images/recommend4.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+			<div class="detail">
+				<img src="images/recommend5.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="free">
+		<div>
+			<h3 class="title-left">免费好课</h3>
+			<p class="title-right">更多 ></p>
+		</div>
+		<div class="detailPo">
+			<div class="detail">
+				<img src="images/recommend1.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+			<div class="detail">
+				<img src="images/recommend2.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+			<div class="detail">
+				<img src="images/recommend3.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+			<div class="detail">
+				<img src="images/recommend4.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+			<div class="detail">
+				<img src="images/recommend5.jpg">
+				<div class="detail-text overflow">
+					<p class="p1">前端到后台ThinkPHP开发整站</p>
+					<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+				</div>
+				<div class="detail-pr">
+					<span class="p1">¥128.00</span>
+					<span class="p2">888人在学习</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+		<!-- web -->
+		<div class="web">
+			<div class="web-left"></div>
+			<div class="web-middle-left">
+				<div class="web-middle1"></div>
+				<div class="web-middle2"></div>
+			</div>
+			<div class="web-middle-right">
+				<div class="detail">
+					<img src="images/web-middle3.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p1">¥128.00</span>
+						<span class="p2">888人在学习</span>
+					</div>
+				</div>
+			</div>
+			<div class="web-middle-right1">
+				<div class="detail">
+					<img src="images/web-middle4.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p1">¥128.00</span>
+						<span class="p2">888人在学习</span>
+					</div>
+				</div>
+			</div>
+			<div class="web-right">
+				<div class="detail" style="height: 364px;position:absolute;right:0;">
+					<img src="images/web-right.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p3">888人在学习</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- java -->
+		<div class="java">
+			<div class="java-left"></div>
+			<div class="java-middle-left">
+				<div class="java-middle1"></div>
+				<div class="java-middle2">
+					<div class="java-middle-right">
+						<div class="detail">
+							<img src="images/web-middle3.jpg">
+							<div class="detail-text overflow">
+								<p class="p1">前端到后台ThinkPHP开发整站</p>
+								<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+							</div>
+							<div class="detail-pr">
+								<span class="p1">¥128.00</span>
+								<span class="p2">888人在学习</span>
+							</div>
+						</div>
+					</div>
+					<div class="java-middle-right">
+						<div class="detail">
+							<img src="images/web-middle3.jpg">
+							<div class="detail-text overflow">
+								<p class="p1">前端到后台ThinkPHP开发整站</p>
+								<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+							</div>
+							<div class="detail-pr">
+								<span class="p1">¥128.00</span>
+								<span class="p2">888人在学习</span>
+							</div>
+						</div>
+					</div>
+					<div class="java-middle-right">
+						<div class="detail">
+							<img src="images/web-middle3.jpg">
+							<div class="detail-text overflow">
+								<p class="p1">前端到后台ThinkPHP开发整站</p>
+								<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+							</div>
+							<div class="detail-pr">
+								<span class="p1">¥128.00</span>
+								<span class="p2">888人在学习</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="java-right">
+				<div class="detail" style="height: 364px;position:absolute;right:0;">
+					<img src="images/web-right.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p3">888人在学习</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- php -->
+		<div class="php">
+			<div class="php-left"></div>
+			<div class="php-middle-left">
+				<div class="php-middle"></div>
+			</div>
+			<div class="php-middle-right">
+				<div class="detail">
+					<img src="images/web-middle3.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p1">¥128.00</span>
+						<span class="p2">888人在学习</span>
+					</div>
+				</div>
+			</div>
+			<div class="php-middle-right1">
+				<div class="detail">
+					<img src="images/web-middle4.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p1">¥128.00</span>
+						<span class="p2">888人在学习</span>
+					</div>
+				</div>
+			</div>
+			<div class="php-right">
+				<div class="detail" style="height: 364px;position:absolute;right:0;">
+					<img src="images/web-right.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p3">888人在学习</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Android -->
+		<div class="Android">
+			<div class="Android-left"></div>
+			<div class="Android-middle-left">
+				<div class="Android-middle1"></div>
+				<div class="Android-middle2">
+					<div class="Android-middle-right">
+						<div class="detail">
+							<img src="images/web-middle3.jpg">
+							<div class="detail-text overflow">
+								<p class="p1">前端到后台ThinkPHP开发整站</p>
+								<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+							</div>
+							<div class="detail-pr">
+								<span class="p1">¥128.00</span>
+								<span class="p2">888人在学习</span>
+							</div>
+						</div>
+					</div>
+					<div class="Android-middle-right">
+						<div class="detail">
+							<img src="images/web-middle3.jpg">
+							<div class="detail-text overflow">
+								<p class="p1">前端到后台ThinkPHP开发整站</p>
+								<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+							</div>
+							<div class="detail-pr">
+								<span class="p1">¥128.00</span>
+								<span class="p2">888人在学习</span>
+							</div>
+						</div>
+					</div>
+					<div class="Android-middle-right">
+						<div class="detail">
+							<img src="images/web-middle3.jpg">
+							<div class="detail-text overflow">
+								<p class="p1">前端到后台ThinkPHP开发整站</p>
+								<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+							</div>
+							<div class="detail-pr">
+								<span class="p1">¥128.00</span>
+								<span class="p2">888人在学习</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Android-right">
+				<div class="detail" style="height: 364px;position:absolute;right:0;">
+					<img src="images/web-right.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p3">888人在学习</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ios -->
+		<div class="ios">
+			<div class="ios-left"></div>
+			<div class="ios-middle-left">
+				<div class="ios-middle1"></div>
+				<div class="ios-middle2"></div>
+			</div>
+			<div class="ios-middle-right">
+				<div class="detail">
+					<img src="images/web-middle3.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p1">¥128.00</span>
+						<span class="p2">888人在学习</span>
+					</div>
+				</div>
+			</div>
+			<div class="ios-middle-right1">
+				<div class="detail">
+					<img src="images/web-middle4.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p1">¥128.00</span>
+						<span class="p2">888人在学习</span>
+					</div>
+				</div>
+			</div>
+			<div class="ios-right">
+				<div class="detail" style="height: 364px;position:absolute;right:0;">
+					<img src="images/web-right.jpg">
+					<div class="detail-text overflow">
+						<p class="p1">前端到后台ThinkPHP开发整站</p>
+						<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+					</div>
+					<div class="detail-pr">
+						<span class="p3">888人在学习</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Linux -->
+		<div class="Linux">
+			<div class="detailPo">
+				<div class="detail1"></div>
+				<div class="detail2">
+					<div class="detail">
+						<img src="images/recommend2.jpg">
+						<div class="detail-text overflow">
+							<p class="p1">前端到后台ThinkPHP开发整站</p>
+							<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+						</div>
+						<div class="detail-pr">
+							<span class="p1">¥128.00</span>
+							<span class="p2">888人在学习</span>
+						</div>
+					</div>
+					<div class="detail">
+						<img src="images/recommend3.jpg">
+						<div class="detail-text overflow">
+							<p class="p1">前端到后台ThinkPHP开发整站</p>
+							<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+						</div>
+						<div class="detail-pr">
+							<span class="p1">¥128.00</span>
+							<span class="p2">888人在学习</span>
+						</div>
+					</div>
+				</div>
+				<div class="detail2">
+					<div class="detail">
+						<img src="images/recommend4.jpg">
+						<div class="detail-text overflow">
+							<p class="p1">前端到后台ThinkPHP开发整站</p>
+							<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+						</div>
+						<div class="detail-pr">
+							<span class="p1">¥128.00</span>
+							<span class="p2">888人在学习</span>
+						</div>
+					</div>
+					<div class="detail">
+						<img src="images/recommend5.jpg">
+						<div class="detail-text overflow">
+							<p class="p1">前端到后台ThinkPHP开发整站</p>
+							<p class="p2">用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想</p>
+						</div>
+						<div class="detail-pr">
+							<span class="p1">¥128.00</span>
+							<span class="p2">888人在学习</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- shouji -->
+		<div class="shouji">
+			<div class="shouji-left"></div>
+			<div class="shouji-middle-left">
+				<div class="shouji-middle1"></div>
+				<div class="shouji-middle2"></div>
+			</div>
+			<div class="shouji-middle-right">
+				<div class="shouji-middle1"></div>
+				<div class="shouji-middle2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-top">
+			<span><i class="icon-twitter icon-2x"></i></span>
+			<span><i class="icon-pinterest icon-2x"></i></span>
+			<span><i class="icon-weibo icon-2x"></i></span>
+			<span><i class="icon-renren icon-2x"></i></span>
+		</div>
+		<div class="footer-middle">
+			<a>关于我们</a> <a>人才招聘</a> <a>讲师招募</a> <a>联系我们</a> <a>意见反馈</a> <a>友情链接</a>   
+		</div>
+		<div class="footer-bootm">
+			<p>© 2016 shawn  京ICP备13046642号</p>
 		</div>
 	</div>
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/nav.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </html>

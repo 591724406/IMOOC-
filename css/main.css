@@ -3,7 +3,27 @@
 	padding: 0;
 	font-family: "Microsoft Yahei";
 }
+.hidden{
+	display: none;
+}
+.title-left{
+	float: left;
+	margin: 20px;
+	line-height: 16px;
+    font-size: 16px;
+    color: #07111b;
+}
+.title-right{
+	float: right;
+	margin: 20px;
+	line-height: 14px;
+    font-size: 14px;
+    color: #07111b;
+}
 /*nav*/
+.header{
+	height:570px;
+}
 .nav{
 	background: url(../images/nav-banner.jpg) no-repeat;
 	background-size: cover;
@@ -177,6 +197,10 @@
 	background-color: RGBA(0,0,0,.4);
 	z-index: 2;
 }
+.banner .tab section:hover{
+	background-color: RGBA(0,0,0,.5);
+	cursor: pointer;
+}
 .banner .tab-div{
 	margin: 10px 10px;
 	height: 80px;
@@ -189,6 +213,10 @@
 	height: 80px;
 	width: 230px;
 	color: #fff;
+}
+.banner .tab-div-bottom:hover{
+	background-color: RGBA(0,0,0,.5);
+	cursor: pointer;
 }
 .banner .tab-text{
 	padding:10px 10px;
@@ -203,14 +231,52 @@
 	float: left;
 	padding-right:10px;
 }
-.banner .tab-body{
+.banner .tab-body1{
 	background: url(../images/fe.png);
 	height: 460px;
 	width: 732px;
 	z-index: 3;
 	position: absolute;
+	top: 0;
 	left: 250px;
 }
+.banner .tab-body2{
+	background: url(../images/be.png);
+	height: 460px;
+	width: 732px;
+	z-index: 3;
+	position: absolute;
+	left: 250px;
+	top: 0;
+}
+.banner .tab-body3{
+	background: url(../images/mobile.png);
+	height: 460px;
+	width: 732px;
+	z-index: 3;
+	position: absolute;
+	left: 250px;
+	top: 0;
+}
+.banner .tab-body4{
+	background: url(../images/data.png);
+	height: 460px;
+	width: 732px;
+	z-index: 3;
+	position: absolute;
+	left: 250px;
+	top: 0;
+}
+.banner .tab-body5{
+	background: url(../images/photo.png);
+	height: 460px;
+	width: 732px;
+	z-index: 3;
+	position: absolute;
+	left: 250px;
+	top: 0;
+}
+
 .banner .tab-body h3{
 	padding: 50px;
 	color: #f01400;
@@ -271,4 +337,415 @@
 }
 .banner #next{
 	right: 20px;
+}
+/*recommend*/
+.recommend{
+	width: 1200px;
+	height: 260px;
+	margin: auto;
+	position: relative;
+}
+.recommend .detailPo{
+	position: absolute;
+	top:60px;
+	cursor: pointer;
+}
+.detail{
+	width:228px;
+	height: 172px;
+	display:inline-block;
+	margin:3px;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+	background-color: #fff;
+}
+.detail:hover{
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+}
+.detail img{
+	position: absolute;
+	z-index: 1;
+}
+.detail p{
+
+	font-size: 16px;
+}
+.detail .detail-text{
+	background-color: RGBA(255,255,255,.9);
+	position: absolute;
+	width: 228px;
+	height:120px;
+	top:30px;
+	z-index: 2;
+	text-align: left;
+}
+.detail .overflow{
+	overflow: hidden;
+	height:40px;
+	top:100px;
+}
+.detail .detail-text .p1{
+	font-size: 14px;
+	padding:20px 20px 0 20px;
+}
+.detail .detail-text .p2{
+	padding: 0 20px 0 20px;
+	color: #93999f;
+	font-size: 14px;
+}
+.detail .detail-pr{
+	position: absolute;
+	width: 228px;
+	top:150px;
+	z-index: 2;
+	padding-left: 20px;
+}
+.detail .detail-pr .p1{
+	color: #EF1300;
+	font-size: 12px;
+}
+.detail .detail-pr .p2{
+	float: right;
+	padding-right:40px;
+	color: #93999f;
+	font-size: 12px;
+}
+.detail .detail-pr .p3{
+	color: #93999f;
+	font-size:14px;
+	border-bottom: 1px solid #f7f7f7;
+}
+/*free*/
+.free{
+	width: 1200px;
+	height: 260px;
+	margin: auto;
+	position: relative;
+}
+.free .detailPo{
+	position: absolute;
+	top:80px;
+	cursor: pointer;
+}
+.free .title-left{
+	position: absolute;
+	top:20px;
+}
+.free .title-right{
+	position: absolute;
+	top:20px;
+	right: 0
+}
+/*main*/
+.main{
+	background-color: #f3f5f7;
+	margin-top:60px;
+}
+.main .web{
+	width: 1200px;
+	height: 404px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .web .web-left{
+	background: url(../images/web.png);
+	width: 224px;
+	height: 364px;
+	position: absolute;
+}
+.main .web .web-middle1{
+	background: url(../images/web-middle1.jpg);
+	width: 468px;
+	height:172px;
+	position: absolute;
+	left:240px;
+}
+.main .web .web-middle2{
+	background: url(../images/web-middle2.jpg);
+	width: 468px;
+	height:172px;
+	position: absolute;
+	left: 240px;
+	top: 192px;
+}
+.main .web .web-middle-right{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+}
+.main .web .detail{
+	height:172px;
+}
+.main .web .web-middle-right1{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+	top: 192px;
+}
+/*java*/
+.main .java{
+	width: 1200px;
+	height: 404px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .java .java-left{
+	background: url(../images/java.png);
+	width: 224px;
+	height: 364px;
+	position: absolute;
+}
+.main .java .java-middle1{
+	background: url(../images/java-middle1.jpg);
+	width: 710px;
+	height:172px;
+	position: absolute;
+	left:240px;
+}
+.main .java .java-middle2{
+	width: 710px;
+	height:172px;
+	position: absolute;
+	left: 240px;
+	top: 192px;
+}
+.main .java .java-middle-right{
+	display: inline-block;
+	height:172px;
+	width: 233px;
+}
+.main .java .detail{
+	height:172px;
+}
+.main .java .java-middle-right1{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+	top: 192px;
+}
+/*php*/
+.main .php{
+	width: 1200px;
+	height: 404px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .php .php-left{
+	background: url(../images/php.png);
+	width: 224px;
+	height: 364px;
+	position: absolute;
+}
+.main .php .php-middle{
+	background: url(../images/php-middle.jpg);
+	height: 364px;
+	width: 468px;
+	position: absolute;
+	left:240px;
+}
+.main .php .php-middle-right{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+}
+.main .php .detail{
+	height:172px;
+}
+.main .php .php-middle-right1{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+	top: 192px;
+}
+/*Android*/
+.main .Android{
+	width: 1200px;
+	height: 404px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .Android .Android-left{
+	background: url(../images/Android.png);
+	width: 224px;
+	height: 364px;
+	position: absolute;
+}
+.main .Android .Android-middle1{
+	background: url(../images/java-middle1.jpg);
+	width: 710px;
+	height:172px;
+	position: absolute;
+	left:240px;
+}
+.main .Android .Android-middle2{
+	width: 710px;
+	height:172px;
+	position: absolute;
+	left: 240px;
+	top: 192px;
+}
+.main .Android .Android-middle-right{
+	display: inline-block;
+	height:172px;
+	width: 233px;
+}
+.main .Android .detail{
+	height:172px;
+}
+.main .Android .Android-middle-right1{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+	top: 192px;
+}
+/*ios*/
+.main .ios{
+	width: 1200px;
+	height: 404px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .ios .ios-left{
+	background: url(../images/ios.png);
+	width: 224px;
+	height: 364px;
+	position: absolute;
+}
+.main .ios .ios-middle1{
+	background: url(../images/web-middle1.jpg);
+	width: 468px;
+	height:172px;
+	position: absolute;
+	left:240px;
+}
+.main .ios .ios-middle2{
+	background: url(../images/web-middle2.jpg);
+	width: 468px;
+	height:172px;
+	position: absolute;
+	left: 240px;
+	top: 192px;
+}
+.main .ios .ios-middle-right{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+}
+.main .ios .detail{
+	height:172px;
+}
+.main .ios .ios-middle-right1{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+	top: 192px;
+}
+/*Linux*/
+.main .Linux{
+	width: 1200px;
+	height:224px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .Linux .detail1{
+	width: 224px;
+	height:172px;
+	display:inline-block;
+	background: url(../images/Linux.png);
+}
+.main .Linux .detail2{
+	height:171px;
+	display:inline-block;
+	margin-left: 5px;
+}
+.main .Linux .detail{
+	width:230px;
+	height: 171px;
+	display:inline-block;
+	margin:3px;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+}
+/*shouji*/
+.main .shouji{
+	width: 1200px;
+	height: 404px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+.main .shouji .shouji-left{
+	background: url(../images/shoujileft.png);
+	width: 224px;
+	height: 364px;
+	position: absolute;
+}
+.main .shouji .shouji-middle1{
+	background: url(../images/web-middle1.jpg);
+	width: 468px;
+	height:172px;
+	position: absolute;
+	left:240px;
+}
+.main .shouji .shouji-middle2{
+	background: url(../images/web-middle2.jpg);
+	width: 468px;
+	height:172px;
+	position: absolute;
+	left: 240px;
+	top: 192px;
+}
+.main .shouji .shouji-middle-right{
+	position: absolute;
+	left:485px;
+	height:172px;
+}
+.main .shouji .detail{
+	height:172px;
+}
+.main .shouji .shouji-middle-right1{
+	position: absolute;
+	left:720px;
+	height:172px;
+	width: 172px;
+	top: 192px;
+}
+/*footer*/
+.footer{
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+	text-align: center;
+	color: #99a1a6;
+}
+.footer .footer-top{
+	margin-top: 20px;
+}
+.footer .footer-top span{
+	padding: 10px;
+}
+.footer .footer-middle{
+	margin-top: 20px;
+	height: 50px;
+	border-bottom: 1px solid #d0d6d9; 
+}
+.footer .footer-middle a{
+	padding: 10px;
+}
+.footer .footer-bootm{
+	margin-top: 20px;
+	height: 50px;
 }
