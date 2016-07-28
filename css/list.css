@@ -189,7 +189,6 @@
 /*list-type*/
 .list-type{
 	width: 1200px;
-	height: 600px;
 	margin: auto;
 	font-size: 14px;
 }
@@ -261,11 +260,120 @@
 	 color: #787d82;
 }
 .list-bottom  input{
-	width: 18px;
-	height: 18px;
-	background-color: #c8cdd2;
-    opacity: .6;
-    cursor: default;
+	display: inline-block;
     vertical-align: middle;
+    margin-left: 5px;
+    width: 18px;
+    height: 18px;
+    border-color: #c8cdd2;
     border: 1px solid #c8cdd2;
+}
+.list-body{
+	width: 1280px;
+	margin:auto;
+	font-size: 14px;
+}
+.list-body .list-block{
+	display: inline-block;
+	width:280px;
+	height:280px;
+	margin-left:30px;
+	border:1px solid #FFF;
+	transition: box-shadow 0.3s;
+	position: relative;
+}
+.list-body .list-block:hover{
+	cursor: pointer;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+}
+.list-body .list-block img{
+	padding:20px
+}
+.list-body .list-block h3{
+	font-size: 14px;
+	padding-left: 20px;
+
+}
+.list-body .list-block .p1{
+	font-size: 12px;
+	color: #b4bbbf;
+	padding:10px 20px;
+}
+.list-body .list-block .p2{
+	color: #787d82;
+	font-size: 12px;
+	padding-left: 20px;
+}
+.list-body .list-block .p3{
+	color: #787d82;
+	font-size: 12px;
+	position: absolute;
+	left:100px;
+	bottom:30px;
+}
+.list-list{
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+}
+.list-list span{
+	display: inline-block;
+    margin: 0 5px;
+    padding: 0 5px;
+    height: 29px;
+    min-width: 20px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #c8cdd2;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+.list-list a{
+	display: inline-block;
+    margin: 0 5px;
+    padding: 0 5px;
+    height: 29px;
+    min-width: 20px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #787d82;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+.list-list a:hover{
+	border-bottom: 1px solid #f01400;
+}
+.list-list .active{
+	background-color: #f01400;
+	color: #fff;
+}
+.footer{
+	height: 110px;
+	background-color: #000000;
+	margin-top: 30px;
+}
+.footer .footer-text{
+	width: 1100px;
+	margin: auto;
+	padding:20px;
+}
+.footer a{
+	color: #c8cdd2;
+	text-decoration: none;
+	font-size: 14px;
+	padding-right:20px;
+}
+.footer i{
+	color: #c8cdd2;
+}
+.footer-note{
+	width: 1100px;
+	margin: auto;
+}
+.footer-note p{
+	color: #fff;
+	font-size: 14px;
 }
